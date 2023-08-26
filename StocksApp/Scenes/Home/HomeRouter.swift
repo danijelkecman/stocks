@@ -9,11 +9,11 @@
 import Foundation
 
 protocol HomeRoutingLogic {
-  
+  // TODO: not yet implemented
 }
 
 protocol HomeRouterDelegate: AnyObject {
-  
+  // TODO: not yet implemented
 }
 
 class HomeRouter {
@@ -23,5 +23,4 @@ class HomeRouter {
 
 // MARK: - Routing Logic
 extension HomeRouter: HomeRoutingLogic {
-  
 }

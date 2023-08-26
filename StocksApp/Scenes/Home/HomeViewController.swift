@@ -9,7 +9,7 @@
 import UIKit
 
 protocol HomeDisplayLogic: AnyObject {
-  
+  // TODO: not yet implemented
 }
 
 class HomeViewController: UIViewController {
@@ -47,7 +47,6 @@ class HomeViewController: UIViewController {
 
 // MARK: - Display Logic
 extension HomeViewController: HomeDisplayLogic {
-  
 }
 
 // MARK: - Private Methods

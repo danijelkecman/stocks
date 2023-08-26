@@ -5,11 +5,10 @@
 //  Created by Danijel Kecman on 8/26/23.
 //
 
-import XCTest
 @testable import StocksApp
+import XCTest
 
 final class StocksAppTests: XCTestCase {
-
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
@@ -32,5 +31,4 @@ final class StocksAppTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
-
 }

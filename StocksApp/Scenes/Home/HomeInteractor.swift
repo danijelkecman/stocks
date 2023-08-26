@@ -9,7 +9,7 @@
 import Foundation
 
 protocol HomeBusinessLogic {
-  
+  // TODO: not yet implemented
 }
 
 class HomeInteractor {
@@ -18,5 +18,4 @@ class HomeInteractor {
 
 // MARK: - Business Logic
 extension HomeInteractor: HomeBusinessLogic {
-  
 }

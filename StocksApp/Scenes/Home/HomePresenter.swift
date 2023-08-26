@@ -9,7 +9,7 @@
 import Foundation
 
 protocol HomePresentationLogic {
-  
+  // TODO: not yet implemented
 }
 
 class HomePresenter {
@@ -18,5 +18,4 @@ class HomePresenter {
 
 // MARK: - Presentation Logic
 extension HomePresenter: HomePresentationLogic {
-  
 }

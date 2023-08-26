@@ -382,6 +382,7 @@
 /* Begin PBXShellScriptBuildPhase section */
 		69C135452A9A4B0B004C0CAB /* Tag As Warnings */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
@@ -400,6 +401,7 @@
 		};
 		69C135462A9A4B1F004C0CAB /* Swift Lint */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
@@ -418,6 +420,7 @@
 		};
 		69C135472A9A4B34004C0CAB /* Project Sort */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
