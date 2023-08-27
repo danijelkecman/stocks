@@ -50,7 +50,7 @@ private extension EmptyView {
   func setupLabel() {
     addSubview(label)
     label.textAlignment = .center
-    label.textColor = .flowrGray
+    label.textColor = .stockGray
     label.font = UIFont.custom(type: .italicLight, size: 14)
     label.snp.makeConstraints {
       $0.leading.lessThanOrEqualToSuperview().offset(20)

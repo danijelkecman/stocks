@@ -19,7 +19,7 @@ private extension NavigationController {
   func setupViews() {
     navigationBar.barTintColor = .white
     navigationBar.titleTextAttributes = [.font: UIFont.custom(type: .bold, size: 17),
-                                         .foregroundColor: UIColor.flowrPink]
+                                         .foregroundColor: UIColor.stockPink]
     navigationBar.setBackgroundImage(UIImage(), for: .top, barMetrics: .default)
     navigationBar.shadowImage = UIImage()
     navigationBar.tintColor = .white

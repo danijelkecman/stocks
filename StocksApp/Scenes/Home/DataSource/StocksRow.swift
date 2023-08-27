@@ -12,5 +12,5 @@ struct StocksRow: Hashable {
 }
 
 extension StocksRow {
-  var flowerId: Int { entity.id }
+  var stockId: Int { entity.id }
 }

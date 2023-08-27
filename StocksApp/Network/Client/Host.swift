@@ -16,9 +16,9 @@ extension Host {
   var baseURL: String {
     switch self {
     case .development:
-      return "http://flowrspot-api.herokuapp.com/api"
+      return "http://stockspot-api.herokuapp.com/api"
     case .production:
-      return "http://prod-flowrspot-api.herokuapp.com/api"
+      return "http://prod-stockspot-api.herokuapp.com/api"
     }
   }
   
