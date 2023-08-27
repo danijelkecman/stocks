@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		69B412972A9A413F00A7F933 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B412962A9A413F00A7F933 /* AppDelegate.swift */; };
 		69B412992A9A413F00A7F933 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B412982A9A413F00A7F933 /* SceneDelegate.swift */; };
-		69B4129B2A9A413F00A7F933 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B4129A2A9A413F00A7F933 /* ViewController.swift */; };
 		69B412A02A9A414000A7F933 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69B4129F2A9A414000A7F933 /* Assets.xcassets */; };
 		69B412A32A9A414000A7F933 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69B412A12A9A414000A7F933 /* LaunchScreen.storyboard */; };
 		69B412AE2A9A414000A7F933 /* StocksAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B412AD2A9A414000A7F933 /* StocksAppTests.swift */; };
@@ -34,6 +33,42 @@
 		69C135422A9A4AA1004C0CAB /* Ubuntu-RI.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 69C135332A9A4AA1004C0CAB /* Ubuntu-RI.ttf */; };
 		69C135432A9A4AA1004C0CAB /* UbuntuMono-B.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 69C135342A9A4AA1004C0CAB /* UbuntuMono-B.ttf */; };
 		69C135442A9A4AA1004C0CAB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 69C135362A9A4AA1004C0CAB /* Localizable.strings */; };
+		69C1354B2A9A5B7D004C0CAB /* AlamofireNetworkActivityLogger in Frameworks */ = {isa = PBXBuildFile; productRef = 69C1354A2A9A5B7D004C0CAB /* AlamofireNetworkActivityLogger */; };
+		69C1354E2A9A5BDE004C0CAB /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 69C1354D2A9A5BDE004C0CAB /* SnapKit */; };
+		69C135512A9A5C00004C0CAB /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 69C135502A9A5C00004C0CAB /* Alamofire */; };
+		69C135542A9A5C20004C0CAB /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 69C135532A9A5C20004C0CAB /* Kingfisher */; };
+		69C135572A9A5C6B004C0CAB /* PovioKitCore in Frameworks */ = {isa = PBXBuildFile; productRef = 69C135562A9A5C6B004C0CAB /* PovioKitCore */; };
+		69C135592A9A5C6B004C0CAB /* PovioKitNetworking in Frameworks */ = {isa = PBXBuildFile; productRef = 69C135582A9A5C6B004C0CAB /* PovioKitNetworking */; };
+		69C1355B2A9A5C6B004C0CAB /* PovioKitPromise in Frameworks */ = {isa = PBXBuildFile; productRef = 69C1355A2A9A5C6B004C0CAB /* PovioKitPromise */; };
+		69C1355D2A9A5C6B004C0CAB /* PovioKitUI in Frameworks */ = {isa = PBXBuildFile; productRef = 69C1355C2A9A5C6B004C0CAB /* PovioKitUI */; };
+		69C135602A9A5C82004C0CAB /* ProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 69C1355F2A9A5C82004C0CAB /* ProgressHUD */; };
+		69C135632A9A5C92004C0CAB /* Collections in Frameworks */ = {isa = PBXBuildFile; productRef = 69C135622A9A5C92004C0CAB /* Collections */; };
+		69C135652A9A5C92004C0CAB /* DequeModule in Frameworks */ = {isa = PBXBuildFile; productRef = 69C135642A9A5C92004C0CAB /* DequeModule */; };
+		69C135672A9A5C92004C0CAB /* OrderedCollections in Frameworks */ = {isa = PBXBuildFile; productRef = 69C135662A9A5C92004C0CAB /* OrderedCollections */; };
+		69C1356B2A9B5913004C0CAB /* FlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C1356A2A9B5913004C0CAB /* FlowController.swift */; };
+		69C1356D2A9B592B004C0CAB /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C1356C2A9B592B004C0CAB /* NavigationController.swift */; };
+		69C135702A9B5948004C0CAB /* UIFont+Stocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C1356F2A9B5948004C0CAB /* UIFont+Stocks.swift */; };
+		69C135722A9B596C004C0CAB /* UIColor+Stocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C135712A9B596C004C0CAB /* UIColor+Stocks.swift */; };
+		69C135752A9B5991004C0CAB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C135742A9B5991004C0CAB /* Constants.swift */; };
+		69C135782A9B59D2004C0CAB /* LoggerStartupProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C135772A9B59D2004C0CAB /* LoggerStartupProcess.swift */; };
+		69C1357A2A9B59DF004C0CAB /* FlowControllerStartupProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C135792A9B59DF004C0CAB /* FlowControllerStartupProcess.swift */; };
+		69C135802A9B5B93004C0CAB /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C1357F2A9B5B93004C0CAB /* PersistenceManager.swift */; };
+		69C135822A9B5B9C004C0CAB /* HapticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C135812A9B5B9C004C0CAB /* HapticsManager.swift */; };
+		69C135852A9B854B004C0CAB /* AlamofireNetworkClient+Stocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C135842A9B854B004C0CAB /* AlamofireNetworkClient+Stocks.swift */; };
+		69C135872A9B8562004C0CAB /* EndpointEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C135862A9B8562004C0CAB /* EndpointEncodable.swift */; };
+		69C1358A2A9B857F004C0CAB /* Host.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C135892A9B857F004C0CAB /* Host.swift */; };
+		69C1358C2A9B8D37004C0CAB /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C1358B2A9B8D37004C0CAB /* SearchResultViewController.swift */; };
+		69C1358E2A9B8E6A004C0CAB /* Aliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C1358D2A9B8E6A004C0CAB /* Aliases.swift */; };
+		69C135902A9B94B5004C0CAB /* UIView+Stocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C1358F2A9B94B5004C0CAB /* UIView+Stocks.swift */; };
+		69C135922A9BAD64004C0CAB /* SearchResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C135912A9BAD64004C0CAB /* SearchResultView.swift */; };
+		69C135952A9BAE1F004C0CAB /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C135942A9BAE1F004C0CAB /* EmptyView.swift */; };
+		69C135972A9BAE58004C0CAB /* StocksCollectionViewItemDimension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C135962A9BAE58004C0CAB /* StocksCollectionViewItemDimension.swift */; };
+		69C1359A2A9BAE73004C0CAB /* CollectionViewItemDimension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C135992A9BAE73004C0CAB /* CollectionViewItemDimension.swift */; };
+		69C1359C2A9BAED6004C0CAB /* StocksCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C1359B2A9BAED6004C0CAB /* StocksCollectionViewCell.swift */; };
+		69C1359F2A9BAFBA004C0CAB /* StocksDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C1359E2A9BAFBA004C0CAB /* StocksDataSource.swift */; };
+		69C135A12A9BAFEC004C0CAB /* StocksSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C135A02A9BAFEC004C0CAB /* StocksSection.swift */; };
+		69C135A32A9BB015004C0CAB /* StocksRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C135A22A9BB015004C0CAB /* StocksRow.swift */; };
+		69C135A62A9BB03C004C0CAB /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C135A52A9BB03C004C0CAB /* Stock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +92,6 @@
 		69B412932A9A413F00A7F933 /* StocksApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StocksApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69B412962A9A413F00A7F933 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		69B412982A9A413F00A7F933 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		69B4129A2A9A413F00A7F933 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		69B4129F2A9A414000A7F933 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		69B412A22A9A414000A7F933 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		69B412A42A9A414000A7F933 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -85,6 +119,30 @@
 		69C135332A9A4AA1004C0CAB /* Ubuntu-RI.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-RI.ttf"; sourceTree = "<group>"; };
 		69C135342A9A4AA1004C0CAB /* UbuntuMono-B.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "UbuntuMono-B.ttf"; sourceTree = "<group>"; };
 		69C135362A9A4AA1004C0CAB /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		69C1356A2A9B5913004C0CAB /* FlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowController.swift; sourceTree = "<group>"; };
+		69C1356C2A9B592B004C0CAB /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		69C1356F2A9B5948004C0CAB /* UIFont+Stocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Stocks.swift"; sourceTree = "<group>"; };
+		69C135712A9B596C004C0CAB /* UIColor+Stocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Stocks.swift"; sourceTree = "<group>"; };
+		69C135742A9B5991004C0CAB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		69C135772A9B59D2004C0CAB /* LoggerStartupProcess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerStartupProcess.swift; sourceTree = "<group>"; };
+		69C135792A9B59DF004C0CAB /* FlowControllerStartupProcess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowControllerStartupProcess.swift; sourceTree = "<group>"; };
+		69C1357F2A9B5B93004C0CAB /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
+		69C135812A9B5B9C004C0CAB /* HapticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsManager.swift; sourceTree = "<group>"; };
+		69C135842A9B854B004C0CAB /* AlamofireNetworkClient+Stocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlamofireNetworkClient+Stocks.swift"; sourceTree = "<group>"; };
+		69C135862A9B8562004C0CAB /* EndpointEncodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointEncodable.swift; sourceTree = "<group>"; };
+		69C135892A9B857F004C0CAB /* Host.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Host.swift; sourceTree = "<group>"; };
+		69C1358B2A9B8D37004C0CAB /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
+		69C1358D2A9B8E6A004C0CAB /* Aliases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aliases.swift; sourceTree = "<group>"; };
+		69C1358F2A9B94B5004C0CAB /* UIView+Stocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Stocks.swift"; sourceTree = "<group>"; };
+		69C135912A9BAD64004C0CAB /* SearchResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultView.swift; sourceTree = "<group>"; };
+		69C135942A9BAE1F004C0CAB /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
+		69C135962A9BAE58004C0CAB /* StocksCollectionViewItemDimension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksCollectionViewItemDimension.swift; sourceTree = "<group>"; };
+		69C135992A9BAE73004C0CAB /* CollectionViewItemDimension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewItemDimension.swift; sourceTree = "<group>"; };
+		69C1359B2A9BAED6004C0CAB /* StocksCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksCollectionViewCell.swift; sourceTree = "<group>"; };
+		69C1359E2A9BAFBA004C0CAB /* StocksDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksDataSource.swift; sourceTree = "<group>"; };
+		69C135A02A9BAFEC004C0CAB /* StocksSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksSection.swift; sourceTree = "<group>"; };
+		69C135A22A9BB015004C0CAB /* StocksRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksRow.swift; sourceTree = "<group>"; };
+		69C135A52A9BB03C004C0CAB /* Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +150,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69C135512A9A5C00004C0CAB /* Alamofire in Frameworks */,
+				69C1354B2A9A5B7D004C0CAB /* AlamofireNetworkActivityLogger in Frameworks */,
+				69C135632A9A5C92004C0CAB /* Collections in Frameworks */,
+				69C135652A9A5C92004C0CAB /* DequeModule in Frameworks */,
+				69C135542A9A5C20004C0CAB /* Kingfisher in Frameworks */,
+				69C135672A9A5C92004C0CAB /* OrderedCollections in Frameworks */,
+				69C135572A9A5C6B004C0CAB /* PovioKitCore in Frameworks */,
+				69C135592A9A5C6B004C0CAB /* PovioKitNetworking in Frameworks */,
+				69C1355B2A9A5C6B004C0CAB /* PovioKitPromise in Frameworks */,
+				69C1355D2A9A5C6B004C0CAB /* PovioKitUI in Frameworks */,
+				69C135602A9A5C82004C0CAB /* ProgressHUD in Frameworks */,
+				69C1354E2A9A5BDE004C0CAB /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,6 +206,8 @@
 			isa = PBXGroup;
 			children = (
 				69B412C72A9A417A00A7F933 /* App */,
+				69C135682A9B58FC004C0CAB /* Common */,
+				69C135832A9B853C004C0CAB /* Network */,
 				69B412C62A9A416A00A7F933 /* Resources */,
 				69B412C82A9A418300A7F933 /* Scenes */,
 			);
@@ -184,7 +256,6 @@
 			isa = PBXGroup;
 			children = (
 				69B412C92A9A41B600A7F933 /* Home */,
-				69B4129A2A9A413F00A7F933 /* ViewController.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -192,7 +263,8 @@
 		69B412C92A9A41B600A7F933 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				69C1351C2A9A4A63004C0CAB /* HomeContentView.swift */,
+				69C1359D2A9BAFAD004C0CAB /* DataSource */,
+				69C135482A9A5003004C0CAB /* Views */,
 				69C135202A9A4A63004C0CAB /* HomeInteractor.swift */,
 				69C1351D2A9A4A63004C0CAB /* HomePresenter.swift */,
 				69C1351E2A9A4A63004C0CAB /* HomeRouter.swift */,
@@ -237,6 +309,131 @@
 			path = Localization;
 			sourceTree = "<group>";
 		};
+		69C135482A9A5003004C0CAB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				69C1351C2A9A4A63004C0CAB /* HomeContentView.swift */,
+				69C135912A9BAD64004C0CAB /* SearchResultView.swift */,
+				69C1358B2A9B8D37004C0CAB /* SearchResultViewController.swift */,
+				69C1359B2A9BAED6004C0CAB /* StocksCollectionViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		69C135682A9B58FC004C0CAB /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				69C135692A9B5900004C0CAB /* Controllers */,
+				69C1356E2A9B5939004C0CAB /* Extensions */,
+				69C135762A9B59B1004C0CAB /* Managers */,
+				69C135A42A9BB035004C0CAB /* Model */,
+				69C135982A9BAE69004C0CAB /* Protocols */,
+				69C135732A9B598A004C0CAB /* Utils */,
+				69C135932A9BAE16004C0CAB /* Views */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		69C135692A9B5900004C0CAB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				69C1356A2A9B5913004C0CAB /* FlowController.swift */,
+				69C1356C2A9B592B004C0CAB /* NavigationController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		69C1356E2A9B5939004C0CAB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				69C135712A9B596C004C0CAB /* UIColor+Stocks.swift */,
+				69C1356F2A9B5948004C0CAB /* UIFont+Stocks.swift */,
+				69C1358F2A9B94B5004C0CAB /* UIView+Stocks.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		69C135732A9B598A004C0CAB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				69C1358D2A9B8E6A004C0CAB /* Aliases.swift */,
+				69C135742A9B5991004C0CAB /* Constants.swift */,
+				69C135962A9BAE58004C0CAB /* StocksCollectionViewItemDimension.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		69C135762A9B59B1004C0CAB /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				69C1357B2A9B5B69004C0CAB /* Startup */,
+				69C135812A9B5B9C004C0CAB /* HapticsManager.swift */,
+				69C1357F2A9B5B93004C0CAB /* PersistenceManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		69C1357B2A9B5B69004C0CAB /* Startup */ = {
+			isa = PBXGroup;
+			children = (
+				69C135792A9B59DF004C0CAB /* FlowControllerStartupProcess.swift */,
+				69C135772A9B59D2004C0CAB /* LoggerStartupProcess.swift */,
+			);
+			path = Startup;
+			sourceTree = "<group>";
+		};
+		69C135832A9B853C004C0CAB /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				69C135882A9B8573004C0CAB /* Client */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		69C135882A9B8573004C0CAB /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				69C135842A9B854B004C0CAB /* AlamofireNetworkClient+Stocks.swift */,
+				69C135862A9B8562004C0CAB /* EndpointEncodable.swift */,
+				69C135892A9B857F004C0CAB /* Host.swift */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		69C135932A9BAE16004C0CAB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				69C135942A9BAE1F004C0CAB /* EmptyView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		69C135982A9BAE69004C0CAB /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				69C135992A9BAE73004C0CAB /* CollectionViewItemDimension.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		69C1359D2A9BAFAD004C0CAB /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				69C1359E2A9BAFBA004C0CAB /* StocksDataSource.swift */,
+				69C135A22A9BB015004C0CAB /* StocksRow.swift */,
+				69C135A02A9BAFEC004C0CAB /* StocksSection.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		69C135A42A9BB035004C0CAB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				69C135A52A9BB03C004C0CAB /* Stock.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -256,6 +453,20 @@
 			dependencies = (
 			);
 			name = StocksApp;
+			packageProductDependencies = (
+				69C1354A2A9A5B7D004C0CAB /* AlamofireNetworkActivityLogger */,
+				69C1354D2A9A5BDE004C0CAB /* SnapKit */,
+				69C135502A9A5C00004C0CAB /* Alamofire */,
+				69C135532A9A5C20004C0CAB /* Kingfisher */,
+				69C135562A9A5C6B004C0CAB /* PovioKitCore */,
+				69C135582A9A5C6B004C0CAB /* PovioKitNetworking */,
+				69C1355A2A9A5C6B004C0CAB /* PovioKitPromise */,
+				69C1355C2A9A5C6B004C0CAB /* PovioKitUI */,
+				69C1355F2A9A5C82004C0CAB /* ProgressHUD */,
+				69C135622A9A5C92004C0CAB /* Collections */,
+				69C135642A9A5C92004C0CAB /* DequeModule */,
+				69C135662A9A5C92004C0CAB /* OrderedCollections */,
+			);
 			productName = StocksApp;
 			productReference = 69B412932A9A413F00A7F933 /* StocksApp.app */;
 			productType = "com.apple.product-type.application";
@@ -328,6 +539,15 @@
 				Base,
 			);
 			mainGroup = 69B4128A2A9A413F00A7F933;
+			packageReferences = (
+				69C135492A9A5B7D004C0CAB /* XCRemoteSwiftPackageReference "AlamofireNetworkActivityLogger" */,
+				69C1354C2A9A5BDE004C0CAB /* XCRemoteSwiftPackageReference "SnapKit" */,
+				69C1354F2A9A5C00004C0CAB /* XCRemoteSwiftPackageReference "Alamofire" */,
+				69C135522A9A5C20004C0CAB /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				69C135552A9A5C6B004C0CAB /* XCRemoteSwiftPackageReference "PovioKit" */,
+				69C1355E2A9A5C82004C0CAB /* XCRemoteSwiftPackageReference "ProgressHUD" */,
+				69C135612A9A5C92004C0CAB /* XCRemoteSwiftPackageReference "swift-collections" */,
+			);
 			productRefGroup = 69B412942A9A413F00A7F933 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -444,14 +664,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69C135852A9B854B004C0CAB /* AlamofireNetworkClient+Stocks.swift in Sources */,
+				69C1358E2A9B8E6A004C0CAB /* Aliases.swift in Sources */,
 				69B412972A9A413F00A7F933 /* AppDelegate.swift in Sources */,
+				69C1359A2A9BAE73004C0CAB /* CollectionViewItemDimension.swift in Sources */,
+				69C135752A9B5991004C0CAB /* Constants.swift in Sources */,
+				69C135952A9BAE1F004C0CAB /* EmptyView.swift in Sources */,
+				69C135872A9B8562004C0CAB /* EndpointEncodable.swift in Sources */,
+				69C1356B2A9B5913004C0CAB /* FlowController.swift in Sources */,
+				69C1357A2A9B59DF004C0CAB /* FlowControllerStartupProcess.swift in Sources */,
+				69C135822A9B5B9C004C0CAB /* HapticsManager.swift in Sources */,
 				69C135212A9A4A63004C0CAB /* HomeContentView.swift in Sources */,
 				69C135252A9A4A63004C0CAB /* HomeInteractor.swift in Sources */,
 				69C135222A9A4A63004C0CAB /* HomePresenter.swift in Sources */,
 				69C135232A9A4A63004C0CAB /* HomeRouter.swift in Sources */,
 				69C135242A9A4A63004C0CAB /* HomeViewController.swift in Sources */,
+				69C1358A2A9B857F004C0CAB /* Host.swift in Sources */,
+				69C135782A9B59D2004C0CAB /* LoggerStartupProcess.swift in Sources */,
+				69C1356D2A9B592B004C0CAB /* NavigationController.swift in Sources */,
+				69C135802A9B5B93004C0CAB /* PersistenceManager.swift in Sources */,
 				69B412992A9A413F00A7F933 /* SceneDelegate.swift in Sources */,
-				69B4129B2A9A413F00A7F933 /* ViewController.swift in Sources */,
+				69C135922A9BAD64004C0CAB /* SearchResultView.swift in Sources */,
+				69C1358C2A9B8D37004C0CAB /* SearchResultViewController.swift in Sources */,
+				69C135A62A9BB03C004C0CAB /* Stock.swift in Sources */,
+				69C1359C2A9BAED6004C0CAB /* StocksCollectionViewCell.swift in Sources */,
+				69C135972A9BAE58004C0CAB /* StocksCollectionViewItemDimension.swift in Sources */,
+				69C1359F2A9BAFBA004C0CAB /* StocksDataSource.swift in Sources */,
+				69C135A32A9BB015004C0CAB /* StocksRow.swift in Sources */,
+				69C135A12A9BAFEC004C0CAB /* StocksSection.swift in Sources */,
+				69C135722A9B596C004C0CAB /* UIColor+Stocks.swift in Sources */,
+				69C135702A9B5948004C0CAB /* UIFont+Stocks.swift in Sources */,
+				69C135902A9B94B5004C0CAB /* UIView+Stocks.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -633,7 +876,6 @@
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
@@ -669,7 +911,6 @@
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
@@ -806,6 +1047,128 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		69C135492A9A5B7D004C0CAB /* XCRemoteSwiftPackageReference "AlamofireNetworkActivityLogger" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/konkab/AlamofireNetworkActivityLogger";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.4.0;
+			};
+		};
+		69C1354C2A9A5BDE004C0CAB /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.6.0;
+			};
+		};
+		69C1354F2A9A5C00004C0CAB /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+		69C135522A9A5C20004C0CAB /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.9.1;
+			};
+		};
+		69C135552A9A5C6B004C0CAB /* XCRemoteSwiftPackageReference "PovioKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/poviolabs/PovioKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.1;
+			};
+		};
+		69C1355E2A9A5C82004C0CAB /* XCRemoteSwiftPackageReference "ProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/relatedcode/ProgressHUD";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 13.7.2;
+			};
+		};
+		69C135612A9A5C92004C0CAB /* XCRemoteSwiftPackageReference "swift-collections" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-collections.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		69C1354A2A9A5B7D004C0CAB /* AlamofireNetworkActivityLogger */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 69C135492A9A5B7D004C0CAB /* XCRemoteSwiftPackageReference "AlamofireNetworkActivityLogger" */;
+			productName = AlamofireNetworkActivityLogger;
+		};
+		69C1354D2A9A5BDE004C0CAB /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 69C1354C2A9A5BDE004C0CAB /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		69C135502A9A5C00004C0CAB /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 69C1354F2A9A5C00004C0CAB /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		69C135532A9A5C20004C0CAB /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 69C135522A9A5C20004C0CAB /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		69C135562A9A5C6B004C0CAB /* PovioKitCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 69C135552A9A5C6B004C0CAB /* XCRemoteSwiftPackageReference "PovioKit" */;
+			productName = PovioKitCore;
+		};
+		69C135582A9A5C6B004C0CAB /* PovioKitNetworking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 69C135552A9A5C6B004C0CAB /* XCRemoteSwiftPackageReference "PovioKit" */;
+			productName = PovioKitNetworking;
+		};
+		69C1355A2A9A5C6B004C0CAB /* PovioKitPromise */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 69C135552A9A5C6B004C0CAB /* XCRemoteSwiftPackageReference "PovioKit" */;
+			productName = PovioKitPromise;
+		};
+		69C1355C2A9A5C6B004C0CAB /* PovioKitUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 69C135552A9A5C6B004C0CAB /* XCRemoteSwiftPackageReference "PovioKit" */;
+			productName = PovioKitUI;
+		};
+		69C1355F2A9A5C82004C0CAB /* ProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 69C1355E2A9A5C82004C0CAB /* XCRemoteSwiftPackageReference "ProgressHUD" */;
+			productName = ProgressHUD;
+		};
+		69C135622A9A5C92004C0CAB /* Collections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 69C135612A9A5C92004C0CAB /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = Collections;
+		};
+		69C135642A9A5C92004C0CAB /* DequeModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 69C135612A9A5C92004C0CAB /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = DequeModule;
+		};
+		69C135662A9A5C92004C0CAB /* OrderedCollections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 69C135612A9A5C92004C0CAB /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = OrderedCollections;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 69B4128B2A9A413F00A7F933 /* Project object */;
 }

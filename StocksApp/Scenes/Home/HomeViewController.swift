@@ -3,7 +3,7 @@
 //  StocksApp
 //
 //  Created by Danijel Kecman on 8/26/23.
-//  
+//
 //
 
 import UIKit
@@ -52,11 +52,38 @@ extension HomeViewController: HomeDisplayLogic {
 // MARK: - Private Methods
 private extension HomeViewController {
   func setupViews() {
-    // setup title, navigation buttons, etc
-    setupContentView()
+    setupTitleView()
+    setupSearchController()
   }
   
   func setupContentView() {
     // setup button targets, delegate, datasources, etc
+  }
+  
+  func setupSearchController() {
+    let resultViewController = SearchResultViewController()
+    let searchController = UISearchController(searchResultsController: resultViewController)
+    navigationItem.searchController = searchController
+    searchController.searchResultsUpdater = self
+  }
+  
+  func setupTitleView() {
+    let titleLabel = UILabel()
+    titleLabel.font = .systemFont(ofSize: 40, weight: .medium)
+    titleLabel.text = "Stocks"
+    titleLabel.textColor = .white
+    
+    let leftBarButton = UIBarButtonItem(customView: titleLabel)
+    navigationItem.leftBarButtonItem = leftBarButton
+  }
+}
+
+// MARK: - Result Updating Delegate
+extension HomeViewController: UISearchResultsUpdating {
+  func updateSearchResults(for searchController: UISearchController) {
+    guard let query = searchController.searchBar.text,
+            let resultViewController = searchController.searchResultsController as? SearchResultViewController,
+          !query.trimmingCharacters(in: .whitespaces).isEmpty else { return }
+    Logger.info(query)
   }
 }

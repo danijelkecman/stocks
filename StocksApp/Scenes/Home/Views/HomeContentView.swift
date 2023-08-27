@@ -23,7 +23,6 @@ class HomeContentView: UIView {
 // MARK: - Private Methods
 private extension HomeContentView {
   func setupViews() {
-    // setup background, shadows, etc
-    // call other views setup
+    backgroundColor = .systemBackground
   }
 }
