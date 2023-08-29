@@ -36,3 +36,24 @@ extension FontStyle {
     }
   }
 }
+
+extension UIFont {
+  func fontWithFeature(key: Int, value: Int) -> UIFont {
+    let originalDesc = self.fontDescriptor
+    let features: [UIFontDescriptor.AttributeName: Any] = [
+      UIFontDescriptor.AttributeName.featureSettings: [
+        [
+          UIFontDescriptor.FeatureKey.type: key,
+          UIFontDescriptor.FeatureKey.selector: value
+        ]
+      ]
+    ]
+    let newDesc = originalDesc.addingAttributes(features)
+    return UIFont(descriptor: newDesc, size: 0.0)
+  }
+  
+  func fontWithHighLegibility() -> UIFont {
+    let font = self.fontWithFeature(key: kStylisticAlternativesType, value: kStylisticAltSixOnSelector)
+    return font
+  }
+}

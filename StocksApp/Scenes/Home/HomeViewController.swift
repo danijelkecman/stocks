@@ -54,6 +54,7 @@ private extension HomeViewController {
   func setupViews() {
     setupTitleView()
     setupSearchController()
+    setupContentView()
   }
   
   func setupContentView() {
@@ -61,7 +62,7 @@ private extension HomeViewController {
   }
   
   func setupSearchController() {
-    let resultViewController = SearchResultViewController()
+    let resultViewController = SearchResultViewController(delegate: nil)
     let searchController = UISearchController(searchResultsController: resultViewController)
     navigationItem.searchController = searchController
     searchController.searchResultsUpdater = self
@@ -78,7 +79,7 @@ private extension HomeViewController {
   }
 }
 
-// MARK: - Result Updating Delegate
+// MARK: - Search Result Updating Delegate
 extension HomeViewController: UISearchResultsUpdating {
   func updateSearchResults(for searchController: UISearchController) {
     guard let query = searchController.searchBar.text,

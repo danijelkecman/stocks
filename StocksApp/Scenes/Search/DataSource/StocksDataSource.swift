@@ -35,7 +35,14 @@ extension StocksDataSource {
   
   func create(with collectionView: UICollectionView) -> DataSource? {
     diffableDataSource = DataSource(collectionView: collectionView) { collectionView, indexPath, row in
-      return nil
+      switch row {
+      case let stockRow as StocksRow:
+        let cell = collectionView.dequeueReusableCell(StocksCollectionViewCell.self, at: indexPath)
+        cell.update(with: stockRow)
+        return cell
+      case _:
+        return nil
+      }
     }
     
     return diffableDataSource

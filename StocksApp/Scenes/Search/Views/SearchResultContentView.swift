@@ -1,15 +1,16 @@
 //
-//  SearchResultView.swift
+//  SearchResultContentView.swift
 //  StocksApp
 //
-//  Created by Danijel Kecman on 8/27/23.
+//  Created by Danijel Kecman on 8/29/23.
+//  
 //
 
 import UIKit
 
-class SearchResultView: UIView {
-  let collectionViewDimensions = StocksCollectionViewItemDimension(numberOfItemsInRow: 2, insets: 8)
-  let collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
+class SearchResultContentView: UIView {
+  let collectionViewDimensions = StocksCollectionViewItemDimension(numberOfItemsInRow: 1, insets: 0)
+  var collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
   let emptyView = EmptyView()
   
   override init(frame: CGRect) {
@@ -24,12 +25,21 @@ class SearchResultView: UIView {
 }
 
 // MARK: - Private Methods
-private extension SearchResultView {
+private extension SearchResultContentView {
   func setupViews() {
     backgroundColor = .systemBackground
     
+    setupCollectionViewConfiguration()
     setupCollectionView()
     setupEmptyView()
+  }
+  
+  func setupCollectionViewConfiguration() {
+    var config = UICollectionLayoutListConfiguration(appearance: .plain)
+    config.showsSeparators = false
+    let layout = UICollectionViewCompositionalLayout.list(using: config)
+    collectionView = UICollectionView(frame: bounds, collectionViewLayout: layout)
+    collectionView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
   }
   
   func setupCollectionView() {
@@ -38,12 +48,6 @@ private extension SearchResultView {
     collectionView.keyboardDismissMode = .onDrag
     collectionView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
     collectionView.register(StocksCollectionViewCell.self)
-    (collectionView.collectionViewLayout as? UICollectionViewFlowLayout).map {
-      $0.scrollDirection = .vertical
-      $0.sectionInset = collectionViewDimensions.sectionInset
-      $0.minimumLineSpacing = collectionViewDimensions.lineSpacing
-      $0.minimumInteritemSpacing = collectionViewDimensions.interItemSpacing
-    }
     collectionView.snp.makeConstraints {
       $0.edges.equalToSuperview()
     }
@@ -51,6 +55,7 @@ private extension SearchResultView {
   
   func setupEmptyView() {
     addSubview(emptyView)
+    
     emptyView.text = "No content"
     emptyView.snp.makeConstraints {
       $0.leading.top.trailing.bottom.equalToSuperview()

@@ -9,6 +9,8 @@ import Foundation
 
 struct Stock: Identifiable {
   let id: Int
+  let title: String
+  let subtitle: String
   
   var identifier: Int {
     id

@@ -25,39 +25,43 @@ class StocksCollectionViewCell: UICollectionViewCell {
 
 // MARK: - Public methods
 extension StocksCollectionViewCell {
-  // TODO: implement update from data source
+  func update(with row: StocksRow) {
+    titleLabel.text = row.title
+    subtitleLabel.text = row.subtitle
+  }
 }
 
 // MARK: - Private methods
 private extension StocksCollectionViewCell {
   func setupViews() {
-    layer.masksToBounds = true
-    layer.cornerRadius = 3
-  }
-  
-  func setupImageView() {
-    contentView.addSubview(imageView)
-    
-    imageView.snp.makeConstraints {
-      $0.edges.equalToSuperview()
-    }
+    setupTitleLabel()
+    setupSubtitleLabel()
   }
   
   func setupTitleLabel() {
     contentView.addSubview(titleLabel)
     
     titleLabel.font = .custom(type: .regular, size: 16)
-    titleLabel.textColor = .white
+    titleLabel.textColor = .black
     titleLabel.textAlignment = .center
     titleLabel.numberOfLines = 2
+    
+    titleLabel.snp.makeConstraints {
+      $0.top.leading.equalToSuperview().inset(8)
+    }
   }
   
   func setupSubtitleLabel() {
     contentView.addSubview(subtitleLabel)
     
     subtitleLabel.font = .custom(type: .italic, size: 10)
-    subtitleLabel.textColor = .white
+    subtitleLabel.textColor = .gray
     subtitleLabel.textAlignment = .center
     subtitleLabel.alpha = 0.7
+    
+    subtitleLabel.snp.makeConstraints {
+      $0.top.equalTo(titleLabel.snp.bottom).offset(4)
+      $0.leading.equalToSuperview().inset(8)
+    }
   }
 }

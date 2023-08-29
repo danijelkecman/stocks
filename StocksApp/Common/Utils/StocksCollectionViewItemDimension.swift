@@ -11,7 +11,7 @@ struct StocksCollectionViewItemDimension: CollectionViewItemDimension {
   let numberOfItemsInRow: Int
   let insets: CGFloat
   let defaultWidth: CGFloat = 85
-  let defaultHeight: CGFloat = 100
+  let defaultHeight: CGFloat = 20
   
   init(numberOfItemsInRow: Int, insets: CGFloat) {
     self.numberOfItemsInRow = numberOfItemsInRow
