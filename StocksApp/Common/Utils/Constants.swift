@@ -21,7 +21,7 @@ enum Constants {
   }
   
   enum Network {
-    static let apiKey = ""
+    static let apiKey = "cfrs8nhr01qr5t5sk54gcfrs8nhr01qr5t5sk550"
     static let sandboxApiKey = ""
   }
 }

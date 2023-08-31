@@ -3,13 +3,13 @@
 //  StocksApp
 //
 //  Created by Danijel Kecman on 8/29/23.
-//  
+//
 //
 
 import Foundation
 
 protocol SearchResultBusinessLogic {
-  func fetchStocks()
+  func fetchStocks(_ stocks: [String])
 }
 
 class SearchResultInteractor {
@@ -24,8 +24,8 @@ class SearchResultInteractor {
 
 // MARK: - Business Logic
 extension SearchResultInteractor: SearchResultBusinessLogic {
-  func fetchStocks() {
-    stocksAPI.fetchStocks()
+  func fetchStocks(_ stocks: [String]) {
+    stocksAPI.fetchStocks(with: stocks)
       .finally { [weak self] in
         self?.presenter?.presentStocksResult($0)
       }

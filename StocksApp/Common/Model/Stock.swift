@@ -8,11 +8,11 @@
 import Foundation
 
 struct Stock: Identifiable {
-  let id: Int
+  let id: String
   let title: String
   let subtitle: String
   
-  var identifier: Int {
+  var identifier: String {
     id
   }
 }

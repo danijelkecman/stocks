@@ -9,12 +9,14 @@ import Foundation
 
 extension StocksAPI {
   struct StocksContainer: Decodable {
-    let stocks: [StockResponse]
+    let count: Int
+    let result: [StockResponse]
   }
     
   struct StockResponse: Decodable {
-    let id: Int
-    let title: String
-    let subtitle: String
+    let description: String
+    let displaySymbol: String
+    let symbol: String
+    let type: String
   }
 }

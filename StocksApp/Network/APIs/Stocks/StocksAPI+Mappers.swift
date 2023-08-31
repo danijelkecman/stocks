@@ -10,11 +10,11 @@ import Foundation
 extension StocksAPI {
   struct StocksMapper: ModelMapper {
     static func transform(response: StocksContainer) -> [Stock]? {
-      response.stocks.map {
-        return Stock(
-          id: $0.id,
-          title: $0.title,
-          subtitle: $0.subtitle
+      response.result.map {
+        Stock(
+          id: UUID().uuidString,
+          title: $0.symbol,
+          subtitle: $0.description
         )
       }
     }

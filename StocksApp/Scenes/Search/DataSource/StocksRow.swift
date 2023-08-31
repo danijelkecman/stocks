@@ -12,7 +12,7 @@ struct StocksRow: Hashable {
 }
 
 extension StocksRow {
-  var stockId: Int { entity.id }
+  var stockId: String { entity.id }
   var title: String { entity.title }
   var subtitle: String { entity.subtitle }
 }

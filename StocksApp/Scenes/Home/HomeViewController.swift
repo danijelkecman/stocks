@@ -62,7 +62,7 @@ private extension HomeViewController {
   }
   
   func setupSearchController() {
-    let resultViewController = SearchResultViewController(delegate: nil)
+    let resultViewController = SearchResultViewController(delegate: self)
     let searchController = UISearchController(searchResultsController: resultViewController)
     navigationItem.searchController = searchController
     searchController.searchResultsUpdater = self
@@ -80,11 +80,27 @@ private extension HomeViewController {
 }
 
 // MARK: - Search Result Updating Delegate
-extension HomeViewController: UISearchResultsUpdating {
+extension HomeViewController: UISearchResultsUpdating, UISearchBarDelegate {
   func updateSearchResults(for searchController: UISearchController) {
     guard let query = searchController.searchBar.text,
             let resultViewController = searchController.searchResultsController as? SearchResultViewController,
           !query.trimmingCharacters(in: .whitespaces).isEmpty else { return }
-    Logger.info(query)
+    guard isAlphabetic(query) else {
+      router?.navigateToAlert(title: "Error", message: "Search must be alphabetic", handler: nil)
+      return
+    }
+    resultViewController.fetchStock([query])
+  }
+  
+  func isAlphabetic(_ stock: String) -> Bool {
+    let isAlphabetic = !stock.isEmpty && stock.rangeOfCharacter(from: CharacterSet.letters.inverted) == nil
+    return isAlphabetic
+  }
+}
+
+// MARK: - Search Result View Controller Delegate
+extension HomeViewController: SearchResultRouterDelegate {
+  func stockSelected(stock: String) {
+    Logger.info(stock)
   }
 }

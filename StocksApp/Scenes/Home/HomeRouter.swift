@@ -6,10 +6,10 @@
 //  
 //
 
-import Foundation
+import UIKit
 
 protocol HomeRoutingLogic {
-  // TODO: not yet implemented
+  func navigateToAlert(title: String, message: String, handler: (() -> Void)?)
 }
 
 protocol HomeRouterDelegate: AnyObject {
@@ -23,4 +23,9 @@ class HomeRouter {
 
 // MARK: - Routing Logic
 extension HomeRouter: HomeRoutingLogic {
+  func navigateToAlert(title: String, message: String, handler: (() -> Void)?) {
+    let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+    alert.addAction(UIAlertAction(title: "general_ok".localized(), style: .cancel) { _ in handler?() })
+    viewController?.present(alert, animated: true, completion: nil)
+  }
 }

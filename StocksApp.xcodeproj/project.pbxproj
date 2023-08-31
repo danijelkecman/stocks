@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		691409BA2AA0E6DE003123B0 /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691409B92AA0E6DE003123B0 /* Version.swift */; };
 		6990769F2A9E94D400B04004 /* SearchResultContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6990769A2A9E94D400B04004 /* SearchResultContentView.swift */; };
 		699076A02A9E94D400B04004 /* SearchResultPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6990769B2A9E94D400B04004 /* SearchResultPresenter.swift */; };
 		699076A12A9E94D400B04004 /* SearchResultRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6990769C2A9E94D400B04004 /* SearchResultRouter.swift */; };
@@ -97,6 +98,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		691409B92AA0E6DE003123B0 /* Version.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Version.swift; sourceTree = "<group>"; };
 		6990769A2A9E94D400B04004 /* SearchResultContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultContentView.swift; sourceTree = "<group>"; };
 		6990769B2A9E94D400B04004 /* SearchResultPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultPresenter.swift; sourceTree = "<group>"; };
 		6990769C2A9E94D400B04004 /* SearchResultRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultRouter.swift; sourceTree = "<group>"; };
@@ -451,6 +453,7 @@
 				69C135842A9B854B004C0CAB /* AlamofireNetworkClient+Stocks.swift */,
 				69C135862A9B8562004C0CAB /* EndpointEncodable.swift */,
 				69C135892A9B857F004C0CAB /* Host.swift */,
+				691409B92AA0E6DE003123B0 /* Version.swift */,
 			);
 			path = Client;
 			sourceTree = "<group>";
@@ -759,6 +762,7 @@
 				69C135722A9B596C004C0CAB /* UIColor+Stocks.swift in Sources */,
 				69C135702A9B5948004C0CAB /* UIFont+Stocks.swift in Sources */,
 				69C135902A9B94B5004C0CAB /* UIView+Stocks.swift in Sources */,
+				691409BA2AA0E6DE003123B0 /* Version.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -15,9 +15,9 @@ class StocksAPI {
     self.client = client
   }
   
-  func fetchStocks() -> Promise<[Stock]> {
+  func fetchStocks(with stocks: [String]) -> Promise<[Stock]> {
     client
-      .request(method: .get, endpoint: Endpoints.list)
+      .request(method: .get, endpoint: Endpoints.search(stocks: stocks), headers: ["X-Finnhub-Token": Constants.Network.apiKey])
       .validate()
       .decode(StocksContainer.self, decoder: .default)
       .compactMap(with: StocksMapper.transform)

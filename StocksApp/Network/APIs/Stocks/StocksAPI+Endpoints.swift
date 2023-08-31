@@ -9,12 +9,13 @@ import Foundation
 
 extension StocksAPI {
   enum Endpoints: EndpointEncodable {
-    case list
+    case search(stocks: [String])
     
     var path: Path {
       switch self {
-      case .list:
-        return "stocks"
+      case .search(let stocks):
+        let query = "search?" + stocks.map { "q=\($0)" }.joined(separator: "&")
+        return query
       }
     }
   }

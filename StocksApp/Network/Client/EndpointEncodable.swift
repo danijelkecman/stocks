@@ -18,7 +18,9 @@ protocol EndpointEncodable: URLConvertible {
 
 extension EndpointEncodable {
   var url: String {
-    "\(Host.current.baseURL)/\(path)"
+    let url = "\(Host.current.baseURL)/\(Version.v1.rawValue)/\(path)"
+    Logger.info(url)
+    return url
   }
   
   func asURL() throws -> URL {

@@ -47,6 +47,18 @@ class SearchResultViewController: UIViewController {
   }
 }
 
+// MARK: Interactor
+extension SearchResultViewController {
+  func fetchStock(_ stocks: [String]) {
+    interactor?.fetchStocks(stocks)
+  }
+  
+  func isAlphabetic(_ stock: String) -> Bool {
+    let isAlphabetic = !stock.isEmpty && stock.rangeOfCharacter(from: CharacterSet.letters.inverted) == nil
+    return isAlphabetic
+  }
+}
+
 // MARK: - Display Logic
 extension SearchResultViewController: SearchResultDisplayLogic {
   func displayStocks(_ stocks: [Stock]) {
@@ -56,6 +68,7 @@ extension SearchResultViewController: SearchResultDisplayLogic {
   
   func displayError(title: String, message: String) {
     //    router?.navigateToAlert(title: title, message: message, handler: nil)
+    dataSource.update(stocks: [])
     contentView.emptyView.isHidden = false
   }
 }
@@ -72,11 +85,6 @@ private extension SearchResultViewController {
     contentView.collectionView.delegate = self
     contentView.collectionView.dataSource = dataSource.create(with: contentView.collectionView)
     
-    var stocks = [Stock]()
-    for index in 0..<10 {
-      stocks.append(Stock(id: index, title: "AAPL", subtitle: "Apple inc."))
-    }
-    dataSource.update(stocks: stocks)
     contentView.emptyView.isHidden = true
   }
 }
@@ -98,7 +106,8 @@ extension SearchResultViewController: UICollectionViewDelegate, UICollectionView
     }
     switch row {
     case let stocksRow as StocksRow:
-      Logger.info(stocksRow.title)
+      navigationItem.searchController?.searchBar.resignFirstResponder()
+      router?.dismissViewController(stock: stocksRow.title)
     case _:
       break
     }
